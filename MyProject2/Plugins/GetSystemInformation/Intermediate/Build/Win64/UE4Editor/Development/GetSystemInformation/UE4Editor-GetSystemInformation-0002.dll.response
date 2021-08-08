@@ -33,10 +33,10 @@
 /NODEFAULTLIB:"LIBCD"
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN
-"C:\Users\ACER\Documents\Unreal Projects\MyProject2\Intermediate\Build\Win64\MyProject2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
-"C:\Users\ACER\Documents\Unreal Projects\MyProject2\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\Module.GetSystemInformation.cpp.obj"
-"C:\Users\ACER\Documents\Unreal Projects\MyProject2\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\Module.GetSystemInformation.gen.cpp.obj"
-"C:\Users\ACER\Documents\Unreal Projects\MyProject2\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\Default.rc2.res"
+"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Intermediate\Build\Win64\MyProject2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\Module.GetSystemInformation.cpp.obj"
+"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\Module.GetSystemInformation.gen.cpp.obj"
+"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\Default.rc2.res"
 "delayimp.lib"
 "wininet.lib"
 "rpcrt4.lib"
@@ -66,8 +66,8 @@
 "C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\Slate\UE4Editor-Slate.lib"
 "C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\SlateCore\UE4Editor-SlateCore.lib"
 "C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\Core\UE4Editor-Core.lib"
-/OUT:"C:\Users\ACER\Documents\Unreal Projects\MyProject2\Plugins\GetSystemInformation\Binaries\Win64\UE4Editor-GetSystemInformation-0002.dll"
-/IMPLIB:"C:\Users\ACER\Documents\Unreal Projects\MyProject2\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\UE4Editor-GetSystemInformation-0002.suppressed.lib"
-/PDB:"C:\Users\ACER\Documents\Unreal Projects\MyProject2\Plugins\GetSystemInformation\Binaries\Win64\UE4Editor-GetSystemInformation-0002.pdb"
+/OUT:"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Plugins\GetSystemInformation\Binaries\Win64\UE4Editor-GetSystemInformation-0002.dll"
+/IMPLIB:"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\UE4Editor-GetSystemInformation-0002.suppressed.lib"
+/PDB:"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Plugins\GetSystemInformation\Binaries\Win64\UE4Editor-GetSystemInformation-0002.pdb"
 /ignore:4078
 /INCLUDE:IMPLEMENT_MODULE_GetSystemInformation

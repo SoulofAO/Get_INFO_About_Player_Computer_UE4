@@ -16,11 +16,25 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define MyProject2_Plugins_GetSystemInformation_Source_GetSystemInformation_Public_GetSystemInformationBPLibrary_h_28_SPARSE_DATA
 #define MyProject2_Plugins_GetSystemInformation_Source_GetSystemInformation_Public_GetSystemInformationBPLibrary_h_28_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execGetCPUEndWindowsVersion); \
+	DECLARE_FUNCTION(execGetCPUEndActiveProcessorMask); \
+	DECLARE_FUNCTION(execGetCPUEndMaximumApplicationAddres); \
+	DECLARE_FUNCTION(execGetCPUEndMinimumApplicationAddres); \
+	DECLARE_FUNCTION(execGetCPUEndProcessorType); \
+	DECLARE_FUNCTION(execGetCPUEndNumberOfProcessor); \
+	DECLARE_FUNCTION(execGetCPUEndOEMID); \
 	DECLARE_FUNCTION(execGetRAMEnd);
 
 
 #define MyProject2_Plugins_GetSystemInformation_Source_GetSystemInformation_Public_GetSystemInformationBPLibrary_h_28_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execGetCPUEndWindowsVersion); \
+	DECLARE_FUNCTION(execGetCPUEndActiveProcessorMask); \
+	DECLARE_FUNCTION(execGetCPUEndMaximumApplicationAddres); \
+	DECLARE_FUNCTION(execGetCPUEndMinimumApplicationAddres); \
+	DECLARE_FUNCTION(execGetCPUEndProcessorType); \
+	DECLARE_FUNCTION(execGetCPUEndNumberOfProcessor); \
+	DECLARE_FUNCTION(execGetCPUEndOEMID); \
 	DECLARE_FUNCTION(execGetRAMEnd);
 
 

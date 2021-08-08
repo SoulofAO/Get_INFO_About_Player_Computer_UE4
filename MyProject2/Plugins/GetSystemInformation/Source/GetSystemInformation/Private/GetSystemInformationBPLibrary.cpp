@@ -35,6 +35,13 @@ Version GetOsVersion() {
     std::printf("  Running under Windows %u.%u\n", majorVersion, minorVersion);
     return { majorVersion, minorVersion };
 }
+SYSTEM_INFO GetInfoCPU(){
+SYSTEM_INFO siSysInfo;
+
+GetSystemInfo(&siSysInfo);
+return siSysInfo;
+
+}
 
 UGetSystemInformationBPLibrary::UGetSystemInformationBPLibrary(const FObjectInitializer& ObjectInitializer)
 : Super(ObjectInitializer)
@@ -46,4 +53,48 @@ float UGetSystemInformationBPLibrary::GetRAMEnd()
 {
 	return GetRAM();
 }
+
+float UGetSystemInformationBPLibrary::GetCPUEndOEMID()
+{
+    
+    return GetInfoCPU().dwOemId;
+}
+
+int UGetSystemInformationBPLibrary::GetCPUEndNumberOfProcessor()
+{
+    return GetInfoCPU().dwNumberOfProcessors;
+}
+
+int UGetSystemInformationBPLibrary::GetCPUEndProcessorType()
+{
+    return GetInfoCPU().dwProcessorType;
+}
+
+int UGetSystemInformationBPLibrary::GetCPUEndMinimumApplicationAddres()
+{   
+    //Cast<int>(GetInfoCPU().lpMinimumApplicationAddress);
+    return 0; 
+}
+
+int UGetSystemInformationBPLibrary::GetCPUEndMaximumApplicationAddres()
+{
+    //Cast<int>(GetInfoCPU().lpMinimumApplicationAddress);
+    return 0;
+        
+}
+
+int UGetSystemInformationBPLibrary::GetCPUEndActiveProcessorMask()
+{
+    return GetInfoCPU().dwActiveProcessorMask;
+}
+
+float UGetSystemInformationBPLibrary::GetCPUEndWindowsVersion()
+{
+    const DWORD encodedVersion = ::GetVersion();
+    unsigned majorVersion = unsigned(LOBYTE(LOWORD(encodedVersion)));
+    unsigned minorVersion = unsigned(HIBYTE(LOWORD(encodedVersion)));
+    float F = majorVersion + minorVersion/10;
+    return F;
+}
+
 

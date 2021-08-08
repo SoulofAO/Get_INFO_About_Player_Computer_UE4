@@ -1,9 +1,9 @@
 {
 	"SourceFiles": [
-		"C:\\Users\\ACER\\Documents\\Unreal Projects\\MyProject2\\Source\\MyProject2\\MyProject2.Build.cs",
-		"C:\\Users\\ACER\\Documents\\Unreal Projects\\MyProject2\\Plugins\\GetSystemInformation\\Source\\GetSystemInformation\\GetSystemInformation.Build.cs",
-		"C:\\Users\\ACER\\Documents\\Unreal Projects\\MyProject2\\Source\\MyProject2.Target.cs",
-		"C:\\Users\\ACER\\Documents\\Unreal Projects\\MyProject2\\Source\\MyProject2Editor.Target.cs"
+		"C:\\Users\\ACER\\Documents\\Unreal Projects\\Get_INFO_About_Player_Computer_UE4\\MyProject2\\Source\\MyProject2\\MyProject2.Build.cs",
+		"C:\\Users\\ACER\\Documents\\Unreal Projects\\Get_INFO_About_Player_Computer_UE4\\MyProject2\\Plugins\\GetSystemInformation\\Source\\GetSystemInformation\\GetSystemInformation.Build.cs",
+		"C:\\Users\\ACER\\Documents\\Unreal Projects\\Get_INFO_About_Player_Computer_UE4\\MyProject2\\Source\\MyProject2.Target.cs",
+		"C:\\Users\\ACER\\Documents\\Unreal Projects\\Get_INFO_About_Player_Computer_UE4\\MyProject2\\Source\\MyProject2Editor.Target.cs"
 	],
 	"EngineVersion": "4.25.4"
 }

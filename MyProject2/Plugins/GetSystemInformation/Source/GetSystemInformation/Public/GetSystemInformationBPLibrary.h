@@ -27,6 +27,22 @@ class UGetSystemInformationBPLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_UCLASS_BODY()
 
-	UFUNCTION(BlueprintCallable, meta = (DisplayName = "GETRAM", Keywords = "Get RAM"), Category = "GetSystemInformationTesting")
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "GET RAM", Keywords = "Get RAM"), Category = "GetSystemInformationTesting")
 	static float GetRAMEnd();
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "GET CPU OEMID", Keywords = "Get CPU OEMID"), Category = "GetSystemInformationTesting")
+	static float GetCPUEndOEMID();
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "GET CPU Number Of Processor", Keywords = "Get CPU Number Of Processor"), Category = "GetSystemInformationTesting")
+	static int GetCPUEndNumberOfProcessor();
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "GET CPU Processor type", Keywords = "GET CPU Processor type"), Category = "GetSystemInformationTesting")
+	static int GetCPUEndProcessorType();
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "GET CPU Minimum Application Address", Keywords = "GET CPU Minimum Application Address"), Category = "GetSystemInformationTesting")
+	static int GetCPUEndMinimumApplicationAddres();
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "GET CPU Maximum Application Address", Keywords = "GET CPU Maximum Application Address"), Category = "GetSystemInformationTesting")
+	static int GetCPUEndMaximumApplicationAddres();
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "GET CPU Active Processor Mask", Keywords = "GET CPU Active Processor Mask"), Category = "GetSystemInformationTesting")
+	static int GetCPUEndActiveProcessorMask();
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "GET Windows Version", Keywords = "GET Windows Version"), Category = "GetSystemInformationTesting")
+	static float GetCPUEndWindowsVersion();
+	//Bag. For Windows 10 get Widows 8.
+	//Oh Now bug is over..... :)))
 };

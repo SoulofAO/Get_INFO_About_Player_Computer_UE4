@@ -1,5 +1,5 @@
-C:\Users\ACER\Documents\Unreal Projects\MyProject2\Intermediate\Build\Win64\UE4Editor\Development\MyProject2\Definitions.MyProject2.h
+C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Intermediate\Build\Win64\UE4Editor\Development\MyProject2\Definitions.MyProject2.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-C:\Users\ACER\Documents\Unreal Projects\MyProject2\Source\MyProject2/MyProject2PlayerController.h
-C:\Users\ACER\Documents\Unreal Projects\MyProject2\Intermediate\Build\Win64\UE4Editor\Inc\MyProject2\MyProject2PlayerController.generated.h
+C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Source\MyProject2/MyProject2PlayerController.h
+C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Intermediate\Build\Win64\UE4Editor\Inc\MyProject2\MyProject2PlayerController.generated.h
