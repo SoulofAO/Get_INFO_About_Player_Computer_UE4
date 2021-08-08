@@ -1,0 +1,13 @@
+﻿  Building MyProject2Editor...
+  Using Visual Studio 2019 14.29.30038 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 4 actions with 8 processes...
+    [1/4] Module.GetSystemInformation.cpp
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winnt.h(584): warning C4005: TEXT: ��������� ���ம�।������
+    C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Core\Public\HAL/Platform.h(1034): note: �. �।��饥 ��।������ "TEXT"
+    [2/4] UE4Editor-GetSystemInformation.lib
+       ��������� ������⥪� C:\Users\ACER\Documents\Unreal Projects\MyProject2\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\UE4Editor-GetSystemInformation.lib � ��ꥪ� C:\Users\ACER\Documents\Unreal Projects\MyProject2\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\UE4Editor-GetSystemInformation.exp
+    [3/4] UE4Editor-GetSystemInformation.dll
+       ��������� ������⥪� C:\Users\ACER\Documents\Unreal Projects\MyProject2\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\UE4Editor-GetSystemInformation.suppressed.lib � ��ꥪ� C:\Users\ACER\Documents\Unreal Projects\MyProject2\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\UE4Editor-GetSystemInformation.suppressed.exp
+    [4/4] MyProject2Editor.target
+  Total time in Parallel executor: 23,60 seconds
+  Total execution time: 25,49 seconds
