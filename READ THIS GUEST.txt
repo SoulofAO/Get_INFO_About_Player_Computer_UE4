@@ -1,0 +1,7 @@
+For all guests:
+You can use the plugin anywhere, as long as you notify me. The plugin works for windows for sure. 
+Important: you can get the amount of memory, information about the processor and the version of WINDOWS. 
+I'm thinking of adding features for video cards to it, as time will be.
+
+And sorry for the garbage in the project :)
+If somthing went wrong write me in discord AO#5306
