@@ -97,4 +97,11 @@ float UGetSystemInformationBPLibrary::GetCPUEndWindowsVersion()
     return F;
 }
 
+float UGetSystemInformationBPLibrary::GetDISKSpace()
+{
+    ULARGE_INTEGER free;
+    GetDiskFreeSpaceEx(NULL, &free, NULL, NULL);
+    return free.QuadPart / 1024 / 1024 / 1024;
+}
+
 

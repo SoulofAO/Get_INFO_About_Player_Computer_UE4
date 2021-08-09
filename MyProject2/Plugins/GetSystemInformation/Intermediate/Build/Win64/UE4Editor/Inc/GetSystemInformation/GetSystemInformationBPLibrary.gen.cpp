@@ -18,6 +18,13 @@ void EmptyLinkFunctionForGeneratedCodeGetSystemInformationBPLibrary() {}
 	ENGINE_API UClass* Z_Construct_UClass_UBlueprintFunctionLibrary();
 	UPackage* Z_Construct_UPackage__Script_GetSystemInformation();
 // End Cross Module References
+	DEFINE_FUNCTION(UGetSystemInformationBPLibrary::execGetDISKSpace)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(float*)Z_Param__Result=UGetSystemInformationBPLibrary::GetDISKSpace();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UGetSystemInformationBPLibrary::execGetCPUEndWindowsVersion)
 	{
 		P_FINISH;
@@ -85,6 +92,7 @@ void EmptyLinkFunctionForGeneratedCodeGetSystemInformationBPLibrary() {}
 			{ "GetCPUEndOEMID", &UGetSystemInformationBPLibrary::execGetCPUEndOEMID },
 			{ "GetCPUEndProcessorType", &UGetSystemInformationBPLibrary::execGetCPUEndProcessorType },
 			{ "GetCPUEndWindowsVersion", &UGetSystemInformationBPLibrary::execGetCPUEndWindowsVersion },
+			{ "GetDISKSpace", &UGetSystemInformationBPLibrary::execGetDISKSpace },
 			{ "GetRAMEnd", &UGetSystemInformationBPLibrary::execGetRAMEnd },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -334,6 +342,43 @@ void EmptyLinkFunctionForGeneratedCodeGetSystemInformationBPLibrary() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetDISKSpace_Statics
+	{
+		struct GetSystemInformationBPLibrary_eventGetDISKSpace_Parms
+		{
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetDISKSpace_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GetSystemInformationBPLibrary_eventGetDISKSpace_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetDISKSpace_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetDISKSpace_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetDISKSpace_Statics::Function_MetaDataParams[] = {
+		{ "Category", "GetSystemInformationTesting" },
+		{ "Comment", "//Bag. For Windows 10 get Widows 8.\n//Oh Now bug is over..... :)))\n" },
+		{ "DisplayName", "GET Disk Space" },
+		{ "Keywords", "GET Disk Space" },
+		{ "ModuleRelativePath", "Public/GetSystemInformationBPLibrary.h" },
+		{ "ToolTip", "Bag. For Windows 10 get Widows 8.\nOh Now bug is over..... :)))" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetDISKSpace_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGetSystemInformationBPLibrary, nullptr, "GetDISKSpace", nullptr, nullptr, sizeof(GetSystemInformationBPLibrary_eventGetDISKSpace_Parms), Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetDISKSpace_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetDISKSpace_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetDISKSpace_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetDISKSpace_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetDISKSpace()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetDISKSpace_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetRAMEnd_Statics
 	{
 		struct GetSystemInformationBPLibrary_eventGetRAMEnd_Parms
@@ -395,6 +440,7 @@ void EmptyLinkFunctionForGeneratedCodeGetSystemInformationBPLibrary() {}
 		{ &Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetCPUEndOEMID, "GetCPUEndOEMID" }, // 4160433376
 		{ &Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetCPUEndProcessorType, "GetCPUEndProcessorType" }, // 3669462653
 		{ &Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetCPUEndWindowsVersion, "GetCPUEndWindowsVersion" }, // 1068322158
+		{ &Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetDISKSpace, "GetDISKSpace" }, // 149021911
 		{ &Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetRAMEnd, "GetRAMEnd" }, // 3438425216
 	};
 #if WITH_METADATA
@@ -432,7 +478,7 @@ void EmptyLinkFunctionForGeneratedCodeGetSystemInformationBPLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UGetSystemInformationBPLibrary, 1250941446);
+	IMPLEMENT_CLASS(UGetSystemInformationBPLibrary, 3591411729);
 	template<> GETSYSTEMINFORMATION_API UClass* StaticClass<UGetSystemInformationBPLibrary>()
 	{
 		return UGetSystemInformationBPLibrary::StaticClass();

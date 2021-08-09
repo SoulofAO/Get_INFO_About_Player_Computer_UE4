@@ -45,4 +45,6 @@ class UGetSystemInformationBPLibrary : public UBlueprintFunctionLibrary
 	static float GetCPUEndWindowsVersion();
 	//Bag. For Windows 10 get Widows 8.
 	//Oh Now bug is over..... :)))
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "GET Disk Space", Keywords = "GET Disk Space"), Category = "GetSystemInformationTesting")
+	static float GetDISKSpace();
 };

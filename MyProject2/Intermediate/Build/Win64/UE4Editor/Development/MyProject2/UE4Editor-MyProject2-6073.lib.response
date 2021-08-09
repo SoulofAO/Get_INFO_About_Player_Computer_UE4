@@ -1,0 +1,20 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-MyProject2-6073.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Intermediate\Build\Win64\MyProject2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Intermediate\Build\Win64\UE4Editor\Development\MyProject2\MyProject2.cpp.obj"
+"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Intermediate\Build\Win64\UE4Editor\Development\MyProject2\MyProject2Character.cpp.obj"
+"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Intermediate\Build\Win64\UE4Editor\Development\MyProject2\MyProject2GameMode.cpp.obj"
+"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Intermediate\Build\Win64\UE4Editor\Development\MyProject2\MyProject2PlayerController.cpp.obj"
+"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Intermediate\Build\Win64\UE4Editor\Development\MyProject2\MyProject2.init.gen.cpp.obj"
+"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Intermediate\Build\Win64\UE4Editor\Development\MyProject2\MyProject2Character.gen.cpp.obj"
+"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Intermediate\Build\Win64\UE4Editor\Development\MyProject2\MyProject2GameMode.gen.cpp.obj"
+"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Intermediate\Build\Win64\UE4Editor\Development\MyProject2\MyProject2PlayerController.gen.cpp.obj"
+"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Intermediate\Build\Win64\UE4Editor\Development\MyProject2\Default.rc2.res"
+/OUT:"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Intermediate\Build\Win64\UE4Editor\Development\MyProject2\UE4Editor-MyProject2-6073.lib"
+/INCLUDE:IMPLEMENT_MODULE_MyProject2
