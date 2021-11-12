@@ -32,7 +32,7 @@
 /wd4244
 /wd4838
 /I .
-/I "C:\Users\ACER\Documents\Unreal Projects\MyProject2\Plugins\GetSystemInformation\Source\GetSystemInformation\Private"
+/I "C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Plugins\GetSystemInformation\Source\GetSystemInformation\Private"
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\CoreUObject
 /I Runtime
 /I Runtime\CoreUObject\Public
@@ -231,9 +231,9 @@
 /I Runtime\Experimental\GeometryCollectionSimulationCore\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
-/I "C:\Users\ACER\Documents\Unreal Projects\MyProject2\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Inc\GetSystemInformation"
-/I "C:\Users\ACER\Documents\Unreal Projects\MyProject2\Plugins\GetSystemInformation\Source"
-/I "C:\Users\ACER\Documents\Unreal Projects\MyProject2\Plugins\GetSystemInformation\Source\GetSystemInformation\Public"
+/I "C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Inc\GetSystemInformation"
+/I "C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Plugins\GetSystemInformation\Source"
+/I "C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Plugins\GetSystemInformation\Source\GetSystemInformation\Public"
 /I ThirdParty\PhysX3\PxShared\include
 /I ThirdParty\PhysX3\PxShared\include\cudamanager
 /I ThirdParty\PhysX3\PxShared\include\filebuf
@@ -263,12 +263,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"
-/FI"C:\Users\ACER\Documents\Unreal Projects\MyProject2\Intermediate\Build\Win64\MyProject2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"C:\Users\ACER\Documents\Unreal Projects\MyProject2\Intermediate\Build\Win64\MyProject2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"C:\Users\ACER\Documents\Unreal Projects\MyProject2\Intermediate\Build\Win64\MyProject2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"C:\Users\ACER\Documents\Unreal Projects\MyProject2\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\Module.GetSystemInformation.cpp"
-/FI"C:\Users\ACER\Documents\Unreal Projects\MyProject2\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\Definitions.GetSystemInformation.h"
-/Fo"C:\Users\ACER\Documents\Unreal Projects\MyProject2\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\Module.GetSystemInformation.cpp.obj"
+/FI"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Intermediate\Build\Win64\MyProject2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Intermediate\Build\Win64\MyProject2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Intermediate\Build\Win64\MyProject2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\Module.GetSystemInformation.cpp"
+/FI"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\Definitions.GetSystemInformation.h"
+/Fo"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\Module.GetSystemInformation.cpp.obj"
 /TP
 /GR-
 /W4

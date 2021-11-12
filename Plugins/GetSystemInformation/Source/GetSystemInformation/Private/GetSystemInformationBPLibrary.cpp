@@ -7,6 +7,8 @@
 #include <windows.h>
 #include <stdio.h>
 #include <cstdlib>
+#include <dxgi.h>
+#pragma comment (lib, "dxgi.lib")
 #pragma warning(disable : 4996)
 
 float GetRAM()
@@ -22,6 +24,34 @@ float GetRAM()
 
 
 }
+int UGetSystemInformationBPLibrary::GetNumberVideocard() {
+    IDXGIFactory1* pFactory;
+    HRESULT hr = CreateDXGIFactory1(__uuidof(IDXGIFactory1), (void**)(&pFactory));
+    int AdapterNumber = 0;
+    IDXGIAdapter1* Adapter;
+    while (pFactory->EnumAdapters1(AdapterNumber, &Adapter) != DXGI_ERROR_NOT_FOUND) {
+        AdapterNumber++;
+    }
+    return AdapterNumber;
+}
+
+FString UGetSystemInformationBPLibrary::GetVideocardName(int number)
+{
+    IDXGIFactory1* pFactory;
+    HRESULT hr = CreateDXGIFactory1(__uuidof(IDXGIFactory1), (void**)(&pFactory));
+    IDXGIAdapter1* Adapter;
+    FString String;
+    if (pFactory->EnumAdapters1(number, &Adapter) != DXGI_ERROR_NOT_FOUND) {
+        DXGI_ADAPTER_DESC1 Desc;
+        Adapter->GetDesc1(&Desc);
+        String = Desc.Description;
+    }
+    return String;
+}
+
+
+
+
 struct Version 
 {
     const unsigned majorVersion;

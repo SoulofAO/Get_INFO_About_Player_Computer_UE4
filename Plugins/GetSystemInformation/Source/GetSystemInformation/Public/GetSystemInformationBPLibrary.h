@@ -47,4 +47,8 @@ class UGetSystemInformationBPLibrary : public UBlueprintFunctionLibrary
 	//Oh Now bug is over..... :)))
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "GET Disk Space", Keywords = "GET Disk Space"), Category = "GetSystemInformationTesting")
 	static float GetDISKSpace();
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "GET Number Videocard", Keywords = "GET Number Videocard"), Category = "GetSystemInformationTesting")
+	static int GetNumberVideocard();
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "GET Name Videocard", Keywords = "GET Name Videocard"), Category = "GetSystemInformationTesting")
+	static FString GetVideocardName(int number);
 };

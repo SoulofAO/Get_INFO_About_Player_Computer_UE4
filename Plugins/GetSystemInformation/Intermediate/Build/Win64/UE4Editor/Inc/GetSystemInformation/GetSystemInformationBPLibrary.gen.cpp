@@ -18,6 +18,21 @@ void EmptyLinkFunctionForGeneratedCodeGetSystemInformationBPLibrary() {}
 	ENGINE_API UClass* Z_Construct_UClass_UBlueprintFunctionLibrary();
 	UPackage* Z_Construct_UPackage__Script_GetSystemInformation();
 // End Cross Module References
+	DEFINE_FUNCTION(UGetSystemInformationBPLibrary::execGetVideocardName)
+	{
+		P_GET_PROPERTY(FIntProperty,Z_Param_number);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FString*)Z_Param__Result=UGetSystemInformationBPLibrary::GetVideocardName(Z_Param_number);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UGetSystemInformationBPLibrary::execGetNumberVideocard)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(int32*)Z_Param__Result=UGetSystemInformationBPLibrary::GetNumberVideocard();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UGetSystemInformationBPLibrary::execGetDISKSpace)
 	{
 		P_FINISH;
@@ -93,7 +108,9 @@ void EmptyLinkFunctionForGeneratedCodeGetSystemInformationBPLibrary() {}
 			{ "GetCPUEndProcessorType", &UGetSystemInformationBPLibrary::execGetCPUEndProcessorType },
 			{ "GetCPUEndWindowsVersion", &UGetSystemInformationBPLibrary::execGetCPUEndWindowsVersion },
 			{ "GetDISKSpace", &UGetSystemInformationBPLibrary::execGetDISKSpace },
+			{ "GetNumberVideocard", &UGetSystemInformationBPLibrary::execGetNumberVideocard },
 			{ "GetRAMEnd", &UGetSystemInformationBPLibrary::execGetRAMEnd },
+			{ "GetVideocardName", &UGetSystemInformationBPLibrary::execGetVideocardName },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -379,6 +396,41 @@ void EmptyLinkFunctionForGeneratedCodeGetSystemInformationBPLibrary() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetNumberVideocard_Statics
+	{
+		struct GetSystemInformationBPLibrary_eventGetNumberVideocard_Parms
+		{
+			int32 ReturnValue;
+		};
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetNumberVideocard_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GetSystemInformationBPLibrary_eventGetNumberVideocard_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetNumberVideocard_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetNumberVideocard_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetNumberVideocard_Statics::Function_MetaDataParams[] = {
+		{ "Category", "GetSystemInformationTesting" },
+		{ "DisplayName", "GET Number Videocard" },
+		{ "Keywords", "GET Number Videocard" },
+		{ "ModuleRelativePath", "Public/GetSystemInformationBPLibrary.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetNumberVideocard_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGetSystemInformationBPLibrary, nullptr, "GetNumberVideocard", nullptr, nullptr, sizeof(GetSystemInformationBPLibrary_eventGetNumberVideocard_Parms), Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetNumberVideocard_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetNumberVideocard_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetNumberVideocard_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetNumberVideocard_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetNumberVideocard()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetNumberVideocard_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetRAMEnd_Statics
 	{
 		struct GetSystemInformationBPLibrary_eventGetRAMEnd_Parms
@@ -414,6 +466,45 @@ void EmptyLinkFunctionForGeneratedCodeGetSystemInformationBPLibrary() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetVideocardName_Statics
+	{
+		struct GetSystemInformationBPLibrary_eventGetVideocardName_Parms
+		{
+			int32 number;
+			FString ReturnValue;
+		};
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_number;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetVideocardName_Statics::NewProp_number = { "number", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GetSystemInformationBPLibrary_eventGetVideocardName_Parms, number), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetVideocardName_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GetSystemInformationBPLibrary_eventGetVideocardName_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetVideocardName_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetVideocardName_Statics::NewProp_number,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetVideocardName_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetVideocardName_Statics::Function_MetaDataParams[] = {
+		{ "Category", "GetSystemInformationTesting" },
+		{ "DisplayName", "GET Name Videocard" },
+		{ "Keywords", "GET Name Videocard" },
+		{ "ModuleRelativePath", "Public/GetSystemInformationBPLibrary.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetVideocardName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGetSystemInformationBPLibrary, nullptr, "GetVideocardName", nullptr, nullptr, sizeof(GetSystemInformationBPLibrary_eventGetVideocardName_Parms), Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetVideocardName_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetVideocardName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetVideocardName_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetVideocardName_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetVideocardName()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetVideocardName_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_UGetSystemInformationBPLibrary_NoRegister()
 	{
 		return UGetSystemInformationBPLibrary::StaticClass();
@@ -441,7 +532,9 @@ void EmptyLinkFunctionForGeneratedCodeGetSystemInformationBPLibrary() {}
 		{ &Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetCPUEndProcessorType, "GetCPUEndProcessorType" }, // 3669462653
 		{ &Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetCPUEndWindowsVersion, "GetCPUEndWindowsVersion" }, // 1068322158
 		{ &Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetDISKSpace, "GetDISKSpace" }, // 149021911
+		{ &Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetNumberVideocard, "GetNumberVideocard" }, // 1786964539
 		{ &Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetRAMEnd, "GetRAMEnd" }, // 3438425216
+		{ &Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetVideocardName, "GetVideocardName" }, // 268443238
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGetSystemInformationBPLibrary_Statics::Class_MetaDataParams[] = {
@@ -478,7 +571,7 @@ void EmptyLinkFunctionForGeneratedCodeGetSystemInformationBPLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UGetSystemInformationBPLibrary, 3591411729);
+	IMPLEMENT_CLASS(UGetSystemInformationBPLibrary, 4085756221);
 	template<> GETSYSTEMINFORMATION_API UClass* StaticClass<UGetSystemInformationBPLibrary>()
 	{
 		return UGetSystemInformationBPLibrary::StaticClass();
