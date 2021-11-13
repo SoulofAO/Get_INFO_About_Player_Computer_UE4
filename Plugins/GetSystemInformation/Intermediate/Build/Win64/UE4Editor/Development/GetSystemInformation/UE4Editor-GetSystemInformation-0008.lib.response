@@ -6,10 +6,8 @@
 /NAME:"UE4Editor-GetSystemInformation-0008.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Intermediate\Build\Win64\MyProject2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
-"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\GetSystemInformationBPLibrary.cpp.obj"
-"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\Module.GetSystemInformation.cpp.obj"
-"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\Module.GetSystemInformation.gen.cpp.obj"
-"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\Default.rc2.res"
-/OUT:"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\UE4Editor-GetSystemInformation-0008.lib"
-/INCLUDE:IMPLEMENT_MODULE_GetSystemInformation
+"E:\ASD\MyProject4\Intermediate\Build\Win64\MyProject4Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"E:\ASD\MyProject4\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\Module.GetSystemInformation.cpp.obj"
+"E:\ASD\MyProject4\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\Module.GetSystemInformation.gen.cpp.obj"
+"E:\ASD\MyProject4\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\Default.rc2.res"
+/OUT:"E:\ASD\MyProject4\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\UE4Editor-GetSystemInformation-0008.lib"

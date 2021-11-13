@@ -16,6 +16,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define MyProject4_Plugins_GetSystemInformation_Source_GetSystemInformation_Public_GetSystemInformationBPLibrary_h_28_SPARSE_DATA
 #define MyProject4_Plugins_GetSystemInformation_Source_GetSystemInformation_Public_GetSystemInformationBPLibrary_h_28_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execGetCPUName); \
 	DECLARE_FUNCTION(execGetVideocardName); \
 	DECLARE_FUNCTION(execGetNumberVideocard); \
 	DECLARE_FUNCTION(execGetDISKSpace); \
@@ -31,6 +32,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define MyProject4_Plugins_GetSystemInformation_Source_GetSystemInformation_Public_GetSystemInformationBPLibrary_h_28_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execGetCPUName); \
 	DECLARE_FUNCTION(execGetVideocardName); \
 	DECLARE_FUNCTION(execGetNumberVideocard); \
 	DECLARE_FUNCTION(execGetDISKSpace); \

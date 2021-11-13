@@ -8,22 +8,16 @@
 #include <stdio.h>
 #include <cstdlib>
 #include <dxgi.h>
+#include <sstream>
+#include <intrin.h>
 #pragma comment (lib, "dxgi.lib")
 #pragma warning(disable : 4996)
 
-float GetRAM()
-{
-    using namespace std;
-    MEMORYSTATUSEX statex;
-
-    statex.dwLength = sizeof(statex); // I misunderstand that
-
-    GlobalMemoryStatusEx(&statex);
-
-    return ((float)statex.ullTotalPhys / (1024 * 1024 * 1024));
 
 
-}
+
+
+//VideocardName
 int UGetSystemInformationBPLibrary::GetNumberVideocard() {
     IDXGIFactory1* pFactory;
     HRESULT hr = CreateDXGIFactory1(__uuidof(IDXGIFactory1), (void**)(&pFactory));
@@ -51,6 +45,67 @@ FString UGetSystemInformationBPLibrary::GetVideocardName(int number)
 
 
 
+//////////
+// 
+// 
+// //////
+
+//ProcessorName
+struct cpuid_regs
+{
+    DWORD   Eax;
+    DWORD   Ebx;
+    DWORD   Ecx;
+    DWORD   Edx;
+};
+
+std::string SplitIntoChars(DWORD Value)
+{
+    std::string Str;
+    char const* pCursor = (char const*)&Value;
+    for (int i = 0; i < sizeof(Value); ++i) {
+        Str += pCursor[i];
+    }
+    return Str;
+}
+
+std::string GetCpuVendorSubstring(DWORD Eax)
+{
+    cpuid_regs Regs;
+    __cpuid((int*)&Regs, Eax);
+    std::string Str;
+    Str += SplitIntoChars(Regs.Eax);
+    Str += SplitIntoChars(Regs.Ebx);
+    Str += SplitIntoChars(Regs.Ecx);
+    Str += SplitIntoChars(Regs.Edx);
+    return Str;
+}
+
+std::string GetCpuVendorString()
+{
+    std::string VendorString;
+    cpuid_regs Regs;
+    __cpuid((int*)&Regs, 0x80000000);
+    if (Regs.Eax >= 0x80000004)
+    {
+        VendorString =
+            GetCpuVendorSubstring(0x80000002) +
+            GetCpuVendorSubstring(0x80000003) +
+            GetCpuVendorSubstring(0x80000004)
+            ;
+    }
+    return VendorString;
+}
+
+
+FString UGetSystemInformationBPLibrary::GetCPUName()
+{
+    
+    return FString(GetCpuVendorString().c_str());
+}
+
+
+///////////
 
 struct Version 
 {
@@ -78,7 +133,19 @@ UGetSystemInformationBPLibrary::UGetSystemInformationBPLibrary(const FObjectInit
 {
 
 }
+float GetRAM()
+{
+    using namespace std;
+    MEMORYSTATUSEX statex;
 
+    statex.dwLength = sizeof(statex); // I misunderstand that
+
+    GlobalMemoryStatusEx(&statex);
+
+    return ((float)statex.ullTotalPhys / (1024 * 1024 * 1024));
+
+
+}
 float UGetSystemInformationBPLibrary::GetRAMEnd()
 {
 	return GetRAM();
@@ -95,9 +162,14 @@ int UGetSystemInformationBPLibrary::GetCPUEndNumberOfProcessor()
     return GetInfoCPU().dwNumberOfProcessors;
 }
 
-int UGetSystemInformationBPLibrary::GetCPUEndProcessorType()
+FString UGetSystemInformationBPLibrary::GetCPUEndProcessorType()
+
 {
-    return GetInfoCPU().dwProcessorType;
+    std::stringstream string;
+    string<< GetInfoCPU().dwProcessorType;
+    std::string STDstring = string.str();
+    FString Need_String(STDstring.c_str());
+    return Need_String;
 }
 
 int UGetSystemInformationBPLibrary::GetCPUEndMinimumApplicationAddres()

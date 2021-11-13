@@ -1,5 +1,5 @@
 /MANIFEST:EMBED
-/MANIFESTINPUT:"C:\Program Files\Epic Games\UE_4.25\Engine\Build\Windows\Resources\Default-Win64.manifest"
+/MANIFESTINPUT:E:\UE_4.27\Engine\Build\Windows\Resources\Default-Win64.manifest
 /NOLOGO
 /DEBUG
 /errorReport:prompt
@@ -18,10 +18,10 @@
 /ignore:4099
 /DELAYLOAD:"d3d12.dll"
 /DELAYLOAD:"DBGHELP.DLL"
-/LIBPATH:"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\lib\x64"
+/LIBPATH:"D:\VS_Main\VC\Tools\MSVC\14.29.30133\lib\x64"
 /LIBPATH:"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\lib\um\x64"
-/LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\ucrt\x64"
-/LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x64"
+/LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\ucrt\x64"
+/LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\um\x64"
 /NODEFAULTLIB:"LIBCMT"
 /NODEFAULTLIB:"LIBCPMT"
 /NODEFAULTLIB:"LIBCMTD"
@@ -33,11 +33,15 @@
 /NODEFAULTLIB:"LIBCD"
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN
-"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Intermediate\Build\Win64\MyProject2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
-"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\GetSystemInformationBPLibrary.cpp.obj"
-"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\Module.GetSystemInformation.cpp.obj"
-"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\Module.GetSystemInformation.gen.cpp.obj"
-"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\Default.rc2.res"
+"E:\ASD\MyProject4\Intermediate\Build\Win64\MyProject4Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"E:\ASD\MyProject4\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\Module.GetSystemInformation.cpp.obj"
+"E:\ASD\MyProject4\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\Module.GetSystemInformation.gen.cpp.obj"
+"E:\ASD\MyProject4\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\Default.rc2.res"
+"E:\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Development\CoreUObject\UE4Editor-CoreUObject.lib"
+"E:\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\UE4Editor-Engine.lib"
+"E:\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Development\Slate\UE4Editor-Slate.lib"
+"E:\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Development\SlateCore\UE4Editor-SlateCore.lib"
+"E:\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Development\Core\UE4Editor-Core.lib"
 "delayimp.lib"
 "wininet.lib"
 "rpcrt4.lib"
@@ -62,13 +66,7 @@
 "setupapi.lib"
 "dwmapi.lib"
 "imm32.lib"
-"C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\CoreUObject\UE4Editor-CoreUObject.lib"
-"C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\UE4Editor-Engine.lib"
-"C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\Slate\UE4Editor-Slate.lib"
-"C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\SlateCore\UE4Editor-SlateCore.lib"
-"C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\Core\UE4Editor-Core.lib"
-/OUT:"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Plugins\GetSystemInformation\Binaries\Win64\UE4Editor-GetSystemInformation-0006.dll"
-/IMPLIB:"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\UE4Editor-GetSystemInformation-0006.suppressed.lib"
-/PDB:"C:\Users\ACER\Documents\Unreal Projects\Get_INFO_About_Player_Computer_UE4\MyProject2\Plugins\GetSystemInformation\Binaries\Win64\UE4Editor-GetSystemInformation-0006.pdb"
+/OUT:"E:\ASD\MyProject4\Plugins\GetSystemInformation\Binaries\Win64\UE4Editor-GetSystemInformation-0006.dll"
+/IMPLIB:"E:\ASD\MyProject4\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4Editor\Development\GetSystemInformation\UE4Editor-GetSystemInformation-0006.suppressed.lib"
+/PDB:"E:\ASD\MyProject4\Plugins\GetSystemInformation\Binaries\Win64\UE4Editor-GetSystemInformation-0006.pdb"
 /ignore:4078
-/INCLUDE:IMPLEMENT_MODULE_GetSystemInformation

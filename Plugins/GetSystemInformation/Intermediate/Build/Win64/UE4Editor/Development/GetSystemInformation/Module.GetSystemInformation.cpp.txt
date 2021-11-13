@@ -185,3 +185,5 @@ C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\ocidl.h
 C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\dxgicommon.h
 C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\dxgitype.h
 C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\dxgiformat.h
+D:\VS_Main\VC\Tools\MSVC\14.29.30133\INCLUDE\sstream
+D:\VS_Main\VC\Tools\MSVC\14.29.30133\INCLUDE\string

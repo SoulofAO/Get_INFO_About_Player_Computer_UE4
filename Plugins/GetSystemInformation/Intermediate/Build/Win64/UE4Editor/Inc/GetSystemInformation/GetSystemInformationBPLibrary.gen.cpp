@@ -18,6 +18,13 @@ void EmptyLinkFunctionForGeneratedCodeGetSystemInformationBPLibrary() {}
 	ENGINE_API UClass* Z_Construct_UClass_UBlueprintFunctionLibrary();
 	UPackage* Z_Construct_UPackage__Script_GetSystemInformation();
 // End Cross Module References
+	DEFINE_FUNCTION(UGetSystemInformationBPLibrary::execGetCPUName)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FString*)Z_Param__Result=UGetSystemInformationBPLibrary::GetCPUName();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UGetSystemInformationBPLibrary::execGetVideocardName)
 	{
 		P_GET_PROPERTY(FIntProperty,Z_Param_number);
@@ -72,7 +79,7 @@ void EmptyLinkFunctionForGeneratedCodeGetSystemInformationBPLibrary() {}
 	{
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		*(int32*)Z_Param__Result=UGetSystemInformationBPLibrary::GetCPUEndProcessorType();
+		*(FString*)Z_Param__Result=UGetSystemInformationBPLibrary::GetCPUEndProcessorType();
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(UGetSystemInformationBPLibrary::execGetCPUEndNumberOfProcessor)
@@ -107,6 +114,7 @@ void EmptyLinkFunctionForGeneratedCodeGetSystemInformationBPLibrary() {}
 			{ "GetCPUEndOEMID", &UGetSystemInformationBPLibrary::execGetCPUEndOEMID },
 			{ "GetCPUEndProcessorType", &UGetSystemInformationBPLibrary::execGetCPUEndProcessorType },
 			{ "GetCPUEndWindowsVersion", &UGetSystemInformationBPLibrary::execGetCPUEndWindowsVersion },
+			{ "GetCPUName", &UGetSystemInformationBPLibrary::execGetCPUName },
 			{ "GetDISKSpace", &UGetSystemInformationBPLibrary::execGetDISKSpace },
 			{ "GetNumberVideocard", &UGetSystemInformationBPLibrary::execGetNumberVideocard },
 			{ "GetRAMEnd", &UGetSystemInformationBPLibrary::execGetRAMEnd },
@@ -293,16 +301,16 @@ void EmptyLinkFunctionForGeneratedCodeGetSystemInformationBPLibrary() {}
 	{
 		struct GetSystemInformationBPLibrary_eventGetCPUEndProcessorType_Parms
 		{
-			int32 ReturnValue;
+			FString ReturnValue;
 		};
-		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetCPUEndProcessorType_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GetSystemInformationBPLibrary_eventGetCPUEndProcessorType_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetCPUEndProcessorType_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GetSystemInformationBPLibrary_eventGetCPUEndProcessorType_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetCPUEndProcessorType_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetCPUEndProcessorType_Statics::NewProp_ReturnValue,
 	};
@@ -356,6 +364,41 @@ void EmptyLinkFunctionForGeneratedCodeGetSystemInformationBPLibrary() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetCPUEndWindowsVersion_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetCPUName_Statics
+	{
+		struct GetSystemInformationBPLibrary_eventGetCPUName_Parms
+		{
+			FString ReturnValue;
+		};
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetCPUName_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GetSystemInformationBPLibrary_eventGetCPUName_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetCPUName_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetCPUName_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetCPUName_Statics::Function_MetaDataParams[] = {
+		{ "Category", "GetSystemInformationTesting" },
+		{ "DisplayName", "GET Name CPU" },
+		{ "Keywords", "GET Name CPU" },
+		{ "ModuleRelativePath", "Public/GetSystemInformationBPLibrary.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetCPUName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGetSystemInformationBPLibrary, nullptr, "GetCPUName", nullptr, nullptr, sizeof(GetSystemInformationBPLibrary_eventGetCPUName_Parms), Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetCPUName_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetCPUName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetCPUName_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetCPUName_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetCPUName()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetCPUName_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -529,8 +572,9 @@ void EmptyLinkFunctionForGeneratedCodeGetSystemInformationBPLibrary() {}
 		{ &Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetCPUEndMinimumApplicationAddres, "GetCPUEndMinimumApplicationAddres" }, // 183519409
 		{ &Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetCPUEndNumberOfProcessor, "GetCPUEndNumberOfProcessor" }, // 1181217521
 		{ &Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetCPUEndOEMID, "GetCPUEndOEMID" }, // 4160433376
-		{ &Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetCPUEndProcessorType, "GetCPUEndProcessorType" }, // 3669462653
+		{ &Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetCPUEndProcessorType, "GetCPUEndProcessorType" }, // 2444964419
 		{ &Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetCPUEndWindowsVersion, "GetCPUEndWindowsVersion" }, // 1068322158
+		{ &Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetCPUName, "GetCPUName" }, // 3042427234
 		{ &Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetDISKSpace, "GetDISKSpace" }, // 149021911
 		{ &Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetNumberVideocard, "GetNumberVideocard" }, // 1786964539
 		{ &Z_Construct_UFunction_UGetSystemInformationBPLibrary_GetRAMEnd, "GetRAMEnd" }, // 3438425216
@@ -571,7 +615,7 @@ void EmptyLinkFunctionForGeneratedCodeGetSystemInformationBPLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UGetSystemInformationBPLibrary, 4085756221);
+	IMPLEMENT_CLASS(UGetSystemInformationBPLibrary, 4259285842);
 	template<> GETSYSTEMINFORMATION_API UClass* StaticClass<UGetSystemInformationBPLibrary>()
 	{
 		return UGetSystemInformationBPLibrary::StaticClass();

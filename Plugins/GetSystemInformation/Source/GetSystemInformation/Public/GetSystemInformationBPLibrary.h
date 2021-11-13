@@ -34,7 +34,7 @@ class UGetSystemInformationBPLibrary : public UBlueprintFunctionLibrary
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "GET CPU Number Of Processor", Keywords = "Get CPU Number Of Processor"), Category = "GetSystemInformationTesting")
 	static int GetCPUEndNumberOfProcessor();
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "GET CPU Processor type", Keywords = "GET CPU Processor type"), Category = "GetSystemInformationTesting")
-	static int GetCPUEndProcessorType();
+	static FString GetCPUEndProcessorType();
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "GET CPU Minimum Application Address", Keywords = "GET CPU Minimum Application Address"), Category = "GetSystemInformationTesting")
 	static int GetCPUEndMinimumApplicationAddres();
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "GET CPU Maximum Application Address", Keywords = "GET CPU Maximum Application Address"), Category = "GetSystemInformationTesting")
@@ -51,4 +51,6 @@ class UGetSystemInformationBPLibrary : public UBlueprintFunctionLibrary
 	static int GetNumberVideocard();
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "GET Name Videocard", Keywords = "GET Name Videocard"), Category = "GetSystemInformationTesting")
 	static FString GetVideocardName(int number);
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "GET Name CPU", Keywords = "GET Name CPU"), Category = "GetSystemInformationTesting")
+	static FString GetCPUName();
 };
