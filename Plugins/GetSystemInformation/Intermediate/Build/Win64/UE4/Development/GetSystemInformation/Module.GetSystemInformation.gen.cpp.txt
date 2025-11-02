@@ -1,7 +1,0 @@
-E:\ASD\MyProject4\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4\Development\GetSystemInformation\Definitions.GetSystemInformation.h
-E:/ASD/MyProject4/Plugins/GetSystemInformation/Intermediate/Build/Win64/UE4/Inc/GetSystemInformation/GetSystemInformation.init.gen.cpp
-E:\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-E:\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-E:/ASD/MyProject4/Plugins/GetSystemInformation/Intermediate/Build/Win64/UE4/Inc/GetSystemInformation/GetSystemInformationBPLibrary.gen.cpp
-E:\ASD\MyProject4\Plugins\GetSystemInformation\Source\GetSystemInformation/Public/GetSystemInformationBPLibrary.h
-E:\ASD\MyProject4\Plugins\GetSystemInformation\Intermediate\Build\Win64\UE4\Inc\GetSystemInformation\GetSystemInformationBPLibrary.generated.h
